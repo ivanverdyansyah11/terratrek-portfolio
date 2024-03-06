@@ -1,0 +1,33 @@
+nav.navbar {
+    background-color: rgba(var(--light-color), 0.02);
+    border-bottom: 1px solid rgba(var(--light-color), 0.12);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.navbar .brand-logo:hover {
+    opacity: 0.7;
+}
+
+nav.navbar .navbar-link {
+    display: flex;
+    gap: 30px;
+}
+
+nav.navbar .navbar-link .link-item {
+    color: rgba(var(--light-color), 0.52);
+    font-size: 0.913rem;
+}
+
+nav.navbar .navbar-link .link-item:hover,
+nav.navbar .navbar-link .link-item.active {
+    color: rgba(var(--light-color), 1);
+}
