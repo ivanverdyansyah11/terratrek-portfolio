@@ -1,0 +1,143 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'urbanist-regular';
+    src: url('../font/urbanist/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'urbanist-medium';
+    src: url('../font/urbanist/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'urbanist-semibold';
+    src: url('../font/urbanist/Urbanist-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'space-grotesk-regular';
+    src: url('../font/space-grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'space-grotesk-medium';
+    src: url('../font/space-grotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'space-grotesk-semibold';
+    src: url('../font/space-grotesk/SpaceGrotesk-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'space-grotesk-bold';
+    src: url('../font/space-grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+}
+/* END FONT FACE */
+
+
+/* ROOT */
+:root {
+    --primary-color: 214, 90, 49;
+    --dark-color: 19, 19, 19;
+    --light-color: 255, 255, 255;
+    --urbanist-regular: 'urbanist-regular', Arial, Helvetica, sans-serif;
+    --urbanist-medium: 'urbanist-medium', Arial, Helvetica, sans-serif;
+    --urbanist-semibold: 'urbanist-semibold', Arial, Helvetica, sans-serif;
+    --space-grotesk-regular: 'space-grotesk-regular', Arial, Helvetica, sans-serif;
+    --space-grotesk-medium: 'space-grotesk-medium', Arial, Helvetica, sans-serif;
+    --space-grotesk-semibold: 'space-grotesk-semibold', Arial, Helvetica, sans-serif;
+    --space-grotesk-bold: 'space-grotesk-bold', Arial, Helvetica, sans-serif;
+}
+/* END ROOT */
+
+
+/* GENERAL */
+* {
+    font-family: var(--urbanist-medium);
+    transition: 250ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+a {
+    display: inline-block;
+    color: rgba(var(--dark-color), 1);
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+.button-primary-small,
+.button-primary,
+.button-reverse {
+    width: max-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    padding: 14px 18px;
+    background-color: rgba(var(--primary-color), 1);
+    border-radius: 2px;     
+    font-family: var(--space-grotesk-semibold);
+    color: rgba(var(--light-color), 1);
+    border: 1px solid transparent;
+    font-family: var(--space-grotesk-regular);
+    color: rgba(var(--light-color), 1);
+    font-size: 0.875rem;
+}
+
+.button-primary,
+.button-reverse {
+    padding: 16px 22px;
+}
+
+.button-reverse {
+    background-color: rgba(var(--dark-color), 1);
+}
+
+.button-primary-small span,
+.button-primary span,
+.button-reverse span {
+    font-family: var(--space-grotesk-regular);
+    color: rgba(var(--light-color), 1);
+    font-size: 0.875rem;
+}
+
+.button-primary-small:hover,
+.button-primary:hover,
+.button-reverse:hover {
+    background-color: transparent;
+    border: 1px solid rgba(var(--light-color), 1);
+}
+
+.content-button {
+    display: flex;
+    gap: 8px;
+}
+
+.title {
+    font-size: 4.375rem;
+    font-family: var(--space-grotesk-bold);
+    line-height: 90%;
+    color: rgba(var(--light-color), 1);
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+.section-gap {
+    margin-top: 122px;
+}
+/* END GENERAL */
