@@ -1,0 +1,19 @@
+header.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/hero/hero-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+
+header.hero .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 120px;
+    margin-bottom: 52px;
+}
