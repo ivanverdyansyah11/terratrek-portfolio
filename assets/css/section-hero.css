@@ -17,3 +17,11 @@ header.hero .header-content {
     gap: 120px;
     margin-bottom: 52px;
 }
+
+header.hero .header-content .headline {
+    font-size: 4.375rem;
+    font-family: var(--space-grotesk-bold);
+    line-height: 90%;
+    color: rgba(var(--light-color), 1);
+    text-transform: uppercase;
+}
