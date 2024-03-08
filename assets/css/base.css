@@ -65,7 +65,7 @@ h4,
 h5,
 h6,
 p {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 a {
@@ -76,11 +76,14 @@ a {
 
 body {
     margin: 0;
+    margin-bottom: 120px;
 }
 
 .button-primary-small,
 .button-primary,
-.button-reverse {
+.button-primary-light,
+.button-reverse,
+.button-reverse-light {
     width: max-content;
     height: fit-content;
     display: flex;
@@ -88,26 +91,30 @@ body {
     padding: 14px 18px;
     background-color: rgba(var(--primary-color), 1);
     border-radius: 2px;     
-    font-family: var(--space-grotesk-semibold);
     color: rgba(var(--light-color), 1);
     border: 1px solid transparent;
-    font-family: var(--space-grotesk-regular);
+    font-family: var(--space-grotesk-medium);
     color: rgba(var(--light-color), 1);
     font-size: 0.875rem;
 }
 
 .button-primary,
-.button-reverse {
+.button-primary-light,
+.button-reverse,
+.button-reverse-light {
     padding: 16px 22px;
 }
 
-.button-reverse {
+.button-reverse,
+.button-reverse-light {
     background-color: rgba(var(--dark-color), 1);
 }
 
 .button-primary-small span,
 .button-primary span,
-.button-reverse span {
+.button-primary-light span,
+.button-reverse span,
+.button-reverse-light span {
     font-family: var(--space-grotesk-regular);
     color: rgba(var(--light-color), 1);
     font-size: 0.875rem;
@@ -120,17 +127,25 @@ body {
     border: 1px solid rgba(var(--light-color), 1);
 }
 
+.button-primary-light:hover {
+    background-color: transparent;
+    color: rgba(var(--primary-color), 1);
+    border: 1px solid rgba(var(--primary-color), 1);
+}
+
+.button-reverse-light:hover {
+    background-color: transparent;
+    color: rgba(var(--dark-color), 1);
+    border: 1px solid rgba(var(--dark-color), 1);
+}
+
+.button-reverse-light:hover span {
+    color: rgba(var(--dark-color), 1);
+}
+
 .content-button {
     display: flex;
     gap: 8px;
-}
-
-.title {
-    font-size: 4.375rem;
-    font-family: var(--space-grotesk-bold);
-    line-height: 90%;
-    color: rgba(var(--light-color), 1);
-    text-transform: uppercase;
 }
 
 .container {
@@ -139,5 +154,16 @@ body {
 
 .section-gap {
     margin-top: 122px;
+}
+
+.content-gap {
+    margin-top: 62px;
+}
+
+.title {
+    font-size: 3.25rem;
+    font-family: var(--space-grotesk-bold);
+    line-height: 90%;
+    text-transform: uppercase;
 }
 /* END GENERAL */
