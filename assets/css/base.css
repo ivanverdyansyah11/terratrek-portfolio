@@ -76,11 +76,11 @@ a {
 
 body {
     margin: 0;
-    margin-bottom: 120px;
 }
 
 .button-primary-small,
 .button-primary,
+.button-primary-reverse,
 .button-primary-light,
 .button-reverse,
 .button-reverse-light {
@@ -99,10 +99,23 @@ body {
 }
 
 .button-primary,
+.button-primary-reverse,
 .button-primary-light,
 .button-reverse,
 .button-reverse-light {
     padding: 16px 22px;
+}
+
+.button-primary-reverse {
+    background-color: rgba(var(--light-color), 1);
+    color: rgba(var(--primary-color), 1);
+    border: 1px solid transparent;
+}
+
+.button-primary-reverse:hover {
+    background-color: transparent;
+    border-color: rgba(var(--light-color), 1);
+    color: rgba(var(--light-color), 1);
 }
 
 .button-reverse,
