@@ -1,0 +1,81 @@
+footer.footer {
+    background-color: rgba(var(--dark-color), 1);
+    padding-top: 122px;
+}
+
+footer.footer .footer-content {
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1.75fr 0.750fr 0.750fr 0.750fr;
+    gap: 20px;
+}
+
+footer.footer .footer-content .footer-content-profile img {
+    margin-bottom: 8px;
+}
+
+footer.footer .footer-content .footer-content-profile .content-profile-caption {
+    font-size: 0.913rem;
+    line-height: 150%;
+    color: rgba(var(--light-color), 0.62);
+    margin-bottom: 30px;
+}
+
+footer.footer .footer-content .footer-content-profile .content-profile-sosmed {
+    display: flex;
+    gap: 6px;
+}
+
+footer.footer .footer-content .footer-content-profile .content-profile-sosmed .sosmed-link {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(var(--light-color), 0.06);
+    border: 1px solid rgba(var(--light-color), 0.12);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer.footer .footer-content .footer-content-profile .content-profile-sosmed .sosmed-link:hover {
+    background-color: rgba(var(--primary-color), 1);
+}
+
+footer.footer .footer-content .footer-content-profile .content-profile-sosmed .sosmed-link img {
+    margin-bottom: 0;
+}
+
+footer.footer .footer-content .footer-content-link .footer-title {
+    color: rgba(var(--light-color), 1);
+    font-size: 1.125rem;
+    font-family: var(--urbanist-semibold);
+    margin-bottom: 16px;
+}
+
+footer.footer .footer-content .footer-content-link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+footer.footer .footer-content .footer-content-link ul li a {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.62);
+}
+
+footer.footer .footer-content .footer-content-link ul li a:hover {
+    color: rgba(var(--light-color), 1);
+}
+
+footer.footer .copyright {
+    padding: 24px 0;
+    text-align: center;
+    border-top: 1px solid rgba(var(--light-color), 0.12);
+}
+
+footer.footer .copyright .label {
+    font-size: 0.875rem;
+    color: rgba(var(--light-color), 0.62);
+}
