@@ -1,0 +1,77 @@
+section.section-testimonial {
+    display: grid;
+    grid-template-columns: 0.875fr 1.125fr;
+    gap: 60px;
+    align-items: center;
+    background-color: rgba(var(--dark-color), 1);
+    padding-top: 82px;
+    padding-bottom: 82px;
+}
+
+section.section-testimonial .wrapper-image {
+    padding: 24px;
+    background-color: rgba(var(--light-color), 0.06);
+    border-radius: 6px;
+}
+
+section.section-testimonial .wrapper-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+section.section-testimonial .title {
+    margin-bottom: 24px;
+    color: rgba(var(--light-color), 1);
+}
+
+section.section-testimonial .paragraph {
+    color: rgba(var(--light-color), 0.62);
+    line-height: 150%;
+    font-size: 0.913rem;
+    margin-bottom: 24px;
+}
+
+section.section-testimonial .content-card-testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section.section-testimonial .content-card-testimonial .card-testimonial {
+    padding: 30px 24px;
+    background-color: rgba(var(--light-color), 0.06);
+    border-radius: 5px;
+}
+
+section.section-testimonial .content-card-testimonial .card-testimonial .card-testimonial-message {
+    font-size: 0.913rem;
+    margin: 16px 0;
+    color: rgba(var(--light-color), 0.62);
+    line-height: 150%;
+    --max-lines: 3; 
+    overflow: hidden;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+}
+
+section.section-testimonial .content-card-testimonial .card-testimonial .card-testimonial-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+section.section-testimonial .content-card-testimonial .card-testimonial .card-testimonial-profile img {
+    border-radius: 9999px;
+}
+
+section.section-testimonial .content-card-testimonial .card-testimonial .card-testimonial-profile .profile-username {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 1);
+    margin-bottom: 2px;
+}
+
+section.section-testimonial .content-card-testimonial .card-testimonial .card-testimonial-profile .profile-job {
+    font-size: 0.813rem;
+    color: rgba(var(--light-color), 0.62);
+}
